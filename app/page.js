@@ -1,9 +1,21 @@
-import Card from "@/components/Card";
-import IconCard from "@/components/IconCard";
-import { Button } from "@/components/ui/button";
+import About from "@/components/layout/About";
+import Footer from "@/components/layout/Footer";
+import Hero from "@/components/layout/Hero";
+import Navbar from "@/components/layout/Navbar";
+import Projects from "@/components/layout/Projects";
+import Services from "@/components/layout/Services";
+import WhyUs from "@/components/layout/WhyUs";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center justify-between min-h-screen px-[6.7rem] pt-32"></main>
+    <main className="flex max-w-[1440px] flex-col items-center min-h-screen px-[6.7rem] ">
+      <Navbar />
+      <Hero />
+      <Services />
+      <Projects />
+      <About />
+      <WhyUs />
+      <Footer />
+    </main>
   );
 }
